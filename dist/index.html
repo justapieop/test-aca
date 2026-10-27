@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple website served by Nginx in Docker.">
+  <title>Hello, world!</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #f4f7fb;
+      color: #17243b;
+      font-family: system-ui, sans-serif;
+    }
+    main {
+      width: 100%;
+      max-width: 640px;
+      padding: clamp(28px, 7vw, 64px);
+      border: 1px solid #dce4ef;
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 20px 60px #17243b0d;
+    }
+    .eyebrow { color: #256345; font-size: 14px; font-weight: 700; letter-spacing: .1em; }
+    h1 { margin: 20px 0; font-size: clamp(40px, 8vw, 64px); letter-spacing: -.05em; line-height: 1.05; }
+    p { color: #526078; font-size: 18px; line-height: 1.7; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #dce4ef; color: #526078; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">HELLO FROM NGINX</div>
+    <h1>A small page.<br>A fresh start.</h1>
+    <p>Your website is up and running. Simple HTML, served by Nginx and packaged with Docker.</p>
+    <footer>Built with HTML &amp; CSS · Served with Nginx</footer>
+  </main>
+</body>
+</html>
